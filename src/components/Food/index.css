@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Silkscreen&display=swap");
+.food-page{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 50px;
+    width:50%;
+    height: 100px;
+}
+
+.buttons{
+    position: relative;
+    color: rgb(67, 140, 169);
+    font-family: 'Barlow Condensed', sans-serif;
+    display: in-lineblock;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 10px;
+    border: 2px solid rgb(67, 140, 169);
+    width: 35%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.buttons:hover{
+    background: rgb(67, 140, 169);
+    color: rgb(255, 255, 255);
+}

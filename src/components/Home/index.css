@@ -1,40 +1,86 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Silkscreen&display=swap");
 .home-page{
-    position: relative;
-    margin-left: 5%;
-    margin-top: 5%;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 50px;
     width:100%;
     height: 100px;
 }
 
 h1{
-    color: rgb(67, 140, 169) ;
+    color: rgb(67, 140, 169);
     font-family: 'Silkscreen', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 h2{
-    color: rgb(67, 140, 169) ;
+    color: rgb(67, 140, 169);
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.buttons{
-    color: rgb(67, 140, 169) ;
+.but1{
+    position: absolute;
+    color: rgb(67, 140, 169);
     font-family: 'Barlow Condensed', sans-serif;
     display: block;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     padding: 10px 10px;
     border: 2px solid rgb(67, 140, 169);
-    animation: fadeIn 1s 1.8 backwards;
-    white-space: nowrap;
     width: 25%;
+    top: 140px;
 }
-
-.buttons:hover {
+.but2{
+    position: absolute;
+    color: rgb(67, 140, 169);
+    font-family: 'Barlow Condensed', sans-serif;
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 10px;
+    border: 2px solid rgb(67, 140, 169);
+    width: 25%;
+    top: 230px;
+}
+.but3{
+    position: absolute;
+    color: rgb(67, 140, 169);
+    font-family: 'Barlow Condensed', sans-serif;
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 10px;
+    border: 2px solid rgb(67, 140, 169);
+    width: 25%;
+    top: 320px;
+}
+.but4{
+    position: absolute;
+    color: rgb(67, 140, 169);
+    font-family: 'Barlow Condensed', sans-serif;
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 10px;
+    border: 2px solid rgb(67, 140, 169);
+    width: 25%;
+    top: 410px;
+}
+.but1:hover,
+.but2:hover,
+.but3:hover,
+.but4:hover{
     background: rgb(67, 140, 169);
     color: rgb(255, 255, 255);
   }
+
+.hi{
+    position: absolute;
+    margin-left: 30%;
+    width: 600px;
+    top: 0px;
+
+}
 
