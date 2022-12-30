@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css';
 import { Link } from "react-router-dom";
+import Decidou from '../Images/foodpage.png'
 
 const Food = () => {
     return (
@@ -11,11 +12,13 @@ const Food = () => {
                     Having a hard time deciding what to eat again?
                 </h2>
             </div>
-            <Link to="/dinner" className="buttons">Breakfast</Link>
-            <Link to="/ranlu" className="buttons">Lunch</Link>
+            <br></br>
+            <Link to="/breakfast" className="buttons">Breakfast</Link>
+            <Link to="/lunch" className="buttons">Lunch</Link>
             <Link to="/dinner" className="buttons">Dinner</Link>
-            <Link to="/ransn" className="buttons">Snack</Link>
+            <Link to="/snack" className="buttons">Snack</Link>
             <Link to="/menu" className="buttons">See Menu</Link>
+            <img src={Decidou} alt='decidou' className='decidou' />
         </div>
     )
 }

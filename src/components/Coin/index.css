@@ -1,0 +1,42 @@
+.coin-page{
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 70px;
+    width:50%;
+    height: 100px;
+}
+
+.coinF{
+    position: absolute;
+    margin-left: 20%;
+    width: 500px;
+}
+.coinB{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -50px;
+    width: 450px;
+}
+
+@media only screen and (max-width: 768px) {
+    .coin-page{
+        position: absolute;
+        margin-left: 6%;
+        margin-top: 70px;
+        width:90%;
+        height: 100px;
+    }
+    
+    .coinF{
+        position: absolute;
+        margin-left: 0%;
+        margin-top: -30px;
+        width: 700px;
+    }
+    .coinB{
+        position: absolute;
+        margin-left: 0%;
+        margin-top: -100px;
+        width: 450px;
+    }
+}

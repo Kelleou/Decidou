@@ -2,9 +2,9 @@ import "./index.css";
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore";
 import { db } from '../../../firebase';
-import Decidou from '../../Images/dinner.png';
+import Decidou from '../../Images/snack.png';
 
-const Dinner = () => {
+const Snack = () => {
   var food = "";
   const [ran, setRan] = useState([]);
 
@@ -13,7 +13,7 @@ const Dinner = () => {
     return Math.floor(r)
   }
   const fetchRandom = async () => {
-    await getDocs(collection(db, "dinner"))
+    await getDocs(collection(db, "snack"))
       .then((querySnapshot) => {
         const newData = querySnapshot.docs
           .map((doc) => ({ ...doc.data(), id: doc.id }));
@@ -35,8 +35,8 @@ const Dinner = () => {
   }, [])
 
   return (
-    <div className="dinner">
-      <p> Good evening! You should have </p>
+    <div className="snack">
+      <p> Take a snack break! You should have </p>
       <p className="item"> {ran} !</p>
       <img src={Decidou} className="pic" alt='decidou' />
     </div>
@@ -44,4 +44,4 @@ const Dinner = () => {
 
 }
 
-export default Dinner
+export default Snack

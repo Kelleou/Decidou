@@ -13,7 +13,7 @@ const Home = () => {
                 &nbsp;
                 <Link to="/answer" className="but2"> I am lost!</Link>
                 &nbsp;
-                <Link to="/which" className="but3"> This or That?</Link>
+                <Link to="/coin" className="but3"> Flip a coin!</Link>
                 &nbsp;
                 <Link to="/decidou" className="but4"> More about Dicidou</Link>
             </div>

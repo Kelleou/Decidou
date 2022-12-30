@@ -121,7 +121,7 @@ const Menu = () => {
             <h1>This is our Menu!</h1>
 
             <div className="input">
-                <p className="p1">Fill in the text form to update our menu!</p>
+                <p className="p1">Fill in the text form to expand our menu!</p>
                 <input
                     type="text"
                     placeholder="Add to Breakfast?"
