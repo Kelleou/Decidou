@@ -1,16 +1,14 @@
-import './index.css';
-import Header from '../Header';
-import { Outlet } from 'react-router-dom';
+import "./index.css";
+import Navbar from "../Navbar";
+import { Outlet } from "react-router-dom";
 
-const Layout = () => {
-    return (
-        <div> 
-          <Header/>
-          <div className='page'>
-            <Outlet/>
-          </div>
-        </div>
-    ) 
+export default function Layout() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+    </>
+  );
 }
-
-export default Layout

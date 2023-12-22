@@ -1,11 +1,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Silkscreen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&display=swap');
 .home-page{
     position: absolute;
     margin-left: 15%;
     margin-top: 50px;
     width:100%;
-    height: 100px;
 }
 
 h1{
