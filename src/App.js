@@ -1,17 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './components/Home';
-import Food from './components/Food';
-import Dinner from './components/Food/Dinner';
-import Lunch from './components/Food/Lunch';
-import Breakfast from './components/Food/Breakfast';
-import Snack from './components/Food/Snack';
-import Menu from './components/Menu';
-import Answer from './components/Answer';
-import Coin from './components/Coin';
-import About from './components/About';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import Food from './pages/Food';
+import Dinner from './pages/Food/Dinner';
+import Lunch from './pages/Food/Lunch';
+import Breakfast from './pages/Food/Breakfast';
+import Snack from './pages/Food/Snack';
+import Menu from './pages/Menu';
+import Answer from './pages/Answer';
+import Coin from './pages/Coin';
+import About from './pages/About';
 
 function App() {
   return (
