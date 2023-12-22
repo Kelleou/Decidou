@@ -1,8 +1,8 @@
 import React from 'react'
 import './index.css'
 import { Link, NavLink } from 'react-router-dom'
-import CoinF from '../Images/coinF.png'
-import CoinB from '../Images/coinB.png'
+import CoinF from '../../assets/Images/coinF.png'
+import CoinB from '../../assets/Images/coinB.png'
 
 const Coin = () => {
     function randomNum() {

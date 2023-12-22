@@ -1,12 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './index.css';
-import Logo from '../Images/logo.png'
-import CoinF from '../Images/coinF.png'
-import Decidou from '../Images/decidouicon.png'
-import FoodIcon from '../Images/food.PNG'
-import AnswerIcon from '../Images/answer.PNG'
-import About from '../Images/about.PNG'
+import Logo from '../../assets/Images/logo.png'
+import CoinF from '../../assets/Images/coinF.png'
+import Decidou from '../../assets/Images/decidouicon.png'
+import FoodIcon from '../../assets/Images/food.PNG'
+import AnswerIcon from '../../assets/Images/answer.PNG'
+import About from '../../assets/Images/about.PNG'
 
 const Header = () => {
   return (

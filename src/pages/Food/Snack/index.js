@@ -2,7 +2,7 @@ import "./index.css";
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from "firebase/firestore";
 import { db } from '../../../firebase';
-import Decidou from '../../Images/snack.png';
+import Decidou from '../../../assets/Images/snack.png';
 
 const Snack = () => {
   var food = "";

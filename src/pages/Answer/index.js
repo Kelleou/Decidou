@@ -2,7 +2,7 @@ import "./index.css";
 import { db } from '../../firebase';
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
-import Decidou from '../Images/book.png';
+import Decidou from '../../assets/Images/book.png';
 
 const Answer = () => {
     const [answer, setAnswer] = useState("");

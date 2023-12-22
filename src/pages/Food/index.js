@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css';
 import { Link } from "react-router-dom";
-import Decidou from '../Images/foodpage.png'
+import Decidou from '../../assets/Images/foodpage.png'
 
 const Food = () => {
     return (

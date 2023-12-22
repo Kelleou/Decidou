@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './index.css';
-import Decidou from '../Images/dd.png'
+import Decidou from '../../assets/Images/dd.png'
 const About = () => {
     return (
         <div className="about-page">
