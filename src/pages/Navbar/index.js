@@ -3,17 +3,17 @@ import { useState } from "react";
 import "./index.css";
 
 export default function Header() {
-  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className=" tool-bar flex items-center justify-between p-5">
+    <div className="tool-bar flex items-center justify-between p-5">
       <NavLink className="navlinks font-semibold" to="/">
         Decidou
       </NavLink>
       <nav>
         <section className="flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -59,7 +59,7 @@ export default function Header() {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-10 lg:flex">
+        <ul className="hidden space-x-10 lg:flex">
           <li>
             <NavLink className="navlinks font-semibold" to="/food">
               Food
