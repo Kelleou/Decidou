@@ -7,8 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 html,body
 {
     width: 100%;
@@ -18,7 +16,10 @@ html,body
     overflow-x: hidden; 
     scroll-behavior: smooth;
 }
-
+:root {
+  --blue: #a1c4e4;
+  --globalFont: 'Bree Serif';
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
