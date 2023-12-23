@@ -1,22 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Silkscreen&display=swap");
-
-.lunch{
-    margin-top: 5%;
-    text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 35px;
-}
-
-@media only screen and (max-width: 768px) {
-    .lunch{
-        margin-top: 10%;
-        margin-left: 10%;
-        font-family: 'Barlow Condensed', sans-serif;
-        width: 80%
-    }
-    .pic{
-        position: absolute;
-        margin-left: 0%;
-        width: 300px;
-    }
+.l-item{
+    color: darkgoldenrod;
 }

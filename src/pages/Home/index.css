@@ -1,26 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Silkscreen&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&display=swap");
-.home-page {
-  padding: 100px;
-  position: relative;
-}
-
 h1 {
   color: var(--blue);
   font-family: "Silkscreen", sans-serif;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 h2 {
   color: var(--blue);
   font-family: var(--globalFont), sans-serif;
-  font-size: 40px;
+  font-size: 35px;
 }
 
-.but1,
-.but2,
-.but3,
-.but4 {
+.btns {
   color: var(--blue);
   font-family: var(--globalFont), sans-serif;
   display: block;
@@ -30,10 +20,7 @@ h2 {
   border: 2px solid var(--blue);
   margin-bottom: 10px;
 }
-.but1:hover,
-.but2:hover,
-.but3:hover,
-.but4:hover {
+.btns:hover {
   background: var(--blue);
   color: rgb(255, 255, 255);
 }
