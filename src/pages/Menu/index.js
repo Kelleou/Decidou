@@ -3,7 +3,7 @@ import { db } from "../../firebase";
 import React, { useState, useEffect } from "react";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 
-const Menu = () => {
+export default function Menu(){
   const [name, setName] = useState("");
   const [dinner, setDinner] = useState([]);
   const [lunch, setLunch] = useState([]);
@@ -201,4 +201,3 @@ const Menu = () => {
   );
 };
 
-export default Menu;
