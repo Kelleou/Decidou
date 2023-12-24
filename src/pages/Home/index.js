@@ -17,7 +17,7 @@ export default function Home(){
           <Link to="/coin" className="btns">
             Flip a coin!
           </Link>
-          <Link to="/decidou" className="btns">
+          <Link to="/about" className="btns">
             More about Dicidou
           </Link>
         </span>

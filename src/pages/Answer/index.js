@@ -3,9 +3,11 @@ import { db } from '../../firebase';
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import Decidou from '../../assets/Images/book.png';
+import Book from '../../assets/Images/answer.png';
 
-const Answer = () => {
+export default function Answer(){
     const [answer, setAnswer] = useState("");
+    const [clicked, setClicked] = useState(false);
     var quote = "";
     const [ran, setRan] = useState([]);
 
@@ -49,27 +51,28 @@ const Answer = () => {
         fetchRandom();
     }, [])
 
-
+    function handleClick(){
+        setClicked(true);
+    }
     return (
-        <div className="answer-page">
+        <div className="container md:container md:mx-auto text-center">
 
             <div className="input-quote">
-                <p className="p1">Fill in the text form to add to our Answer Book!</p>
+                <h2>Fill in the text form to add to our Answer Book!</h2>
                 <input
                     type="text"
-                    placeholder="Add to Book?"
+                    placeholder="Enter your quote here to add to the book..."
                     onChange={(e) => setAnswer(e.target.value)}
                 />
                 <button type="submit" className="but" onClick={addAnswer}>
                     Add!
                 </button>
             </div>
-            <div class="book">
-                <img src={Decidou} className="book" alt='decidou' />
-                <h1 className="quote">{ran}</h1>
+            <div className="flex justify-center book">
+                {clicked ? <><img src={Decidou} className="open-img " alt='decidou' />
+                <h1 className="quote">{ran}</h1> </>:<button onClick={handleClick}><img src={Book} className="closed-img" alt='book' />
+                <h1 className="click">Click me for an answer</h1></button>}
             </div>
         </div>
     )
 }
-
-export default Answer

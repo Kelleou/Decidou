@@ -1,32 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Silkscreen&display=swap");
-
-.about-page{
-    position: absolute;
-    margin-left: 15%;
-    margin-top: 50px;
-    width:100%;
-    height: 100px;
-}
-.about{
-    width: 30%;
-    font-weight: 300;
-    font-size: 30px;
-    font-family: 'Barlow Condensed', sans-serif;
+h3 {
+  color: var(--blue);
+  font-family: var(--globalFont), sans-serif;
+  font-size: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-    .about-page{
-        position: absolute;
-        margin-left: 5%;
-        margin-top: 20px;
-        width:90%;
-        height: 100px;
-    }
-    .about{
-        width: 30%;
-        font-weight: 600;
-        font-size: 16px;
-        width: 65%;
-        font-family: 'Barlow Condensed', sans-serif;
-    }
+.function {
+  
+  font-style: italic;
+  font-family: var(--globalFont), sans-serif;
+  font-size: 20px;
+}
+.functions-li {
+  color: var(--blue);
+  font-family: var(--globalFont),sans-serif;
+  font-size: 18px;
 }

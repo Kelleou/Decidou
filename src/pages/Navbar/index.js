@@ -41,17 +41,17 @@ export default function Header() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li>
-            <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/food">
+            <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/food" onClick={() => setIsNavOpen(false)}>
               Food
             </NavLink>
           </li>
           <li>
-          <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/answer">
+          <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/answer" onClick={() => setIsNavOpen(false)}>
               Answer
             </NavLink>
           </li>
           <li>
-          <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/coin">
+          <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/coin" onClick={() => setIsNavOpen(false)}>
               Coin
             </NavLink>
           </li>
