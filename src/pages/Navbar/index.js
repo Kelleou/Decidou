@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <div className="tool-bar flex items-center justify-between p-5">
-      <NavLink className="navlinks font-semibold" to="/">
+      <NavLink className="logo font-semibold" to="/">
         Decidou
       </NavLink>
       <nav>

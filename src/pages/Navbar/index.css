@@ -3,14 +3,15 @@
     height: 12vh;
 }
 
-.navlinks{
-    color: black;
+.logo{
+    color: white;
     font-family: 'Silkscreen', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .navlinks{
-    color:black;
+    color:white;
     font-family: 'Bree Serif', sans-serif;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 25px;
 }
