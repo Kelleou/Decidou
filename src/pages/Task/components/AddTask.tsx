@@ -29,7 +29,7 @@ export function AddTask(): JSX.Element {
     <>
       <button className='btns task-btns' onClick={() => setFormOpened(true)}>Add New Task</button>
       {formOpened ? (
-        <div className="bg-slate-200 w-96 h-96 p-10 m-5 relative">
+        <div className="bg-slate-200 pt-10 m-5 relative add-form">
           <div
             className="CROSS-ICON absolute top-0 right-0 p-5"
             onClick={() => setFormOpened(false)}
@@ -69,7 +69,7 @@ export function AddTask(): JSX.Element {
               onChange={(e) => setDate(new Date(e.target.value))}
             />
 
-            <button onClick={handleSubmit}>Submit</button>
+            <button className="btns text-sm" onClick={handleSubmit}>Create</button>
           </form>
         </div>
       ) : (

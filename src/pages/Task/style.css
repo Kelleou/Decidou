@@ -1,4 +1,15 @@
 .task-btns {
-    width: 150px;
+    position: absolute;
+    right: 5vw;
+    top: 25vh;
+    width: 125px;
     font-size: 16px;
+}
+
+.add-form {
+    position: relative;
+    top: 25%;
+    right: 60vw;
+    width: 70vw;
+    height: 50vh;
 }

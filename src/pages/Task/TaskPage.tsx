@@ -5,11 +5,11 @@ export function TaskPage(): JSX.Element {
   return (
     <div className="container md:container md:mx-auto text-center">
       <h2 className="text-center"> Tasks page</h2>
-      <div className="grid grid-cols-5  gap-0">
-        <span className="col-span-4 p-2">
+      <div className="grid grid-cols-4 m-5 content-center">
+        <span className="col-span-3 m-5">
           <TaskList />
         </span>
-        <span className="col-2 p-2">
+        <span className="col-1">
           <AddTask />
         </span>
       </div>
