@@ -8,6 +8,9 @@ export default function Home(){
       <h2>I am here to help you make a decision!</h2>
       <div className="grid grid-cols-2 m-10 gap-0">
         <span>
+        <Link to="/task" className="btns">
+            Help me schedule tasks!
+          </Link>
           <Link to="/food" className="btns">
             Help me decide what to eat!
           </Link>

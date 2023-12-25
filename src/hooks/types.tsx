@@ -1,6 +1,7 @@
 export type Task = {
-    title: string;
+    title: String;
+    description: String;
     dueDate: Date;
-    type: string;
+    type: String;
 }
 
