@@ -17,7 +17,10 @@ export function TaskItem(task): JSX.Element {
   return (
     <Card
       variant="outlined"
-      sx={{ width: "225px", borderColor: "var(--blue)", borderWidth: "3px" }}
+      sx={{ width: "225px", borderColor: "var(--blue)", borderWidth: "3px", ":hover" : {
+        boxShadow:"10px 10px 7px rgba(0,0,0,.5)",
+        transform: "scale3d(1.20, 1.20, 1)",
+      }, }}
     >
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="#E97451" gutterBottom>

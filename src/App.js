@@ -14,6 +14,7 @@ import Coin from './pages/Coin';
 import About from './pages/About';
 import './pages/Task/TaskPage.tsx';
 import { TaskPage } from './pages/Task/TaskPage.tsx';
+import { ScheduledTaskPage } from './pages/Task/components/ScheduleTask.tsx';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Route path="/coin" element={<Coin />}/>
       <Route path="/about" element={<About />}/>
       <Route path="/task" element={<TaskPage/>}/>
+      <Route path="/task/schedule" element={<ScheduledTaskPage/>}/>
       </Route>
     </Routes>
     </>

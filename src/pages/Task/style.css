@@ -1,15 +1,28 @@
 .task-btns {
-    position: absolute;
-    right: 5vw;
-    top: 25vh;
-    width: 125px;
-    font-size: 16px;
+  display: block;
+  width: 125px;
+  font-size: 16px;
 }
 
 .add-form {
-    position: relative;
-    top: 25%;
-    right: 60vw;
-    width: 70vw;
-    height: 50vh;
+  position: relative;
+  top: 25%;
+  right: 60vw;
+  width: 70vw;
+  height: 50vh;
+}
+
+.list-task-title {
+    color: #6c92cc;
+  font-family: var(--globalFont);
+}
+
+.list-task-date {
+ color: #b87663;
+  font-family: monospace;
+}
+
+.list-task-description {
+    color: #2e4a66d3;
+    font-family: Cambria;
 }
