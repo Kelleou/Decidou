@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
-import Layout from './pages/Layout';
+import Layout from './components/Layout';
 import Home from './pages/Home';
 import Food from './pages/Food';
 import Dinner from './pages/Food/Dinner';
