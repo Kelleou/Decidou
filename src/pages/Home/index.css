@@ -7,7 +7,7 @@ h1 {
 h2 {
   color: var(--blue);
   font-family: var(--globalFont), sans-serif;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .btns {
