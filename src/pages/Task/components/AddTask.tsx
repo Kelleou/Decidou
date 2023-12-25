@@ -8,7 +8,6 @@ export function AddTask(): JSX.Element {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [dueDate, setDate] = useState(new Date());
-  const [type, setType] = useState("");
   const addTask = useTasks((store) => store.addTask);
 
   const handleSubmit = () => {
@@ -16,10 +15,16 @@ export function AddTask(): JSX.Element {
       title,
       description,
       dueDate,
-      type,
     });
+    clear();
     setFormOpened(false);
   };
+
+  const clear = () => {
+    setTitle("");
+    setDescription("");
+    setDate(new Date());
+  }
   return (
     <>
       <button className='btns task-btns' onClick={() => setFormOpened(true)}>Add New Task</button>
@@ -43,12 +48,6 @@ export function AddTask(): JSX.Element {
             </svg>
           </div>
           <form className="flex flex-col items-center justify-between min-h-[250px]">
-            <input
-              type="text"
-              placeholder="Type"
-              value={type}
-              onChange={(e) => setType(e.target.value)}
-            />
             <input
               type="text"
               placeholder="Title"
