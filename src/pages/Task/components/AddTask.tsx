@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useTasks } from "../../../hooks/useTasks.tsx";
+import "../style.css"
 
 export function AddTask(): JSX.Element {
   const [formOpened, setFormOpened] = useState(false);
@@ -21,7 +22,7 @@ export function AddTask(): JSX.Element {
   };
   return (
     <>
-      <button className='btns' onClick={() => setFormOpened(true)}>Add New Task</button>
+      <button className='btns task-btns' onClick={() => setFormOpened(true)}>Add New Task</button>
       {formOpened ? (
         <div className="bg-slate-200 w-96 h-96 p-10 m-5 relative">
           <div
