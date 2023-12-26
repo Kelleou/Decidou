@@ -2,9 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { AddTask } from "./components/AddTask.tsx";
 import { TaskList } from "./components/TaskList.tsx";
+import { useTasks } from "../../hooks/useTasks.tsx";
+import { randomTasks } from "./components/Demo.ts";
+
 export function TaskPage(): JSX.Element {
   const navigate = useNavigate();
-
+  const setTasks = useTasks((store) => store.setTasks);
   return (
     <div className="container md:container md:mx-auto text-center">
       <h2 className="text-center"> Tasks page</h2>
@@ -16,6 +19,8 @@ export function TaskPage(): JSX.Element {
         <span className="col-1">
           <AddTask />
           <button className='btns task-btns' onClick={() => navigate("/task/schedule")}> Schedule </button>
+          <button className='btns task-btns' onClick={() => setTasks([])}>Delete all tasks</button>
+          <button className='btns task-btns' onClick={() => setTasks(randomTasks)}>Demo (random tasks)</button>
         </span>
       </div></div>
     </div>
