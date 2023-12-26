@@ -16,7 +16,7 @@ import { format } from "date-fns";
 import { useTasks } from "../../../hooks/useTasks.tsx";
 import "../style.css"
 
-export function TaskItem(task): JSX.Element {
+export function TaskItem({task}): JSX.Element {
   const removeTask = useTasks((store) => store.removeTask);
   const stickers = {
     1: s1,
@@ -46,13 +46,13 @@ export function TaskItem(task): JSX.Element {
     >
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="#E97451" gutterBottom>
-          Due {format(task.task.dueDate, "MMMM do, yyyy")}
+          Due {format(task.dueDate, "MMMM do, yyyy")}
         </Typography>
         <Typography variant="h5" color="#6082B6" component="div">
-          {task.task.title}
+          {task.title}
         </Typography>
         <Typography variant="body2" color="#6F8FAF">
-          {task.task.description}
+          {task.description}
         </Typography>
       </CardContent>
       <CardActions>
