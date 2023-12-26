@@ -4,12 +4,34 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Task } from "../../../hooks/types";
+import s1 from "../../../assets/Images/face1.jpg";
+import s2 from "../../../assets/Images/face2.jpg";
+import s3 from "../../../assets/Images/face3.jpg";
+import s4 from "../../../assets/Images/face4.jpg";
+import s5 from "../../../assets/Images/face5.jpg";
+import s6 from "../../../assets/Images/face6.jpg";
+import s7 from "../../../assets/Images/face7.jpg";
+import s8 from "../../../assets/Images/face8.jpg";
 import { format } from "date-fns";
 import { useTasks } from "../../../hooks/useTasks.tsx";
+import "../style.css"
 
 export function TaskItem(task): JSX.Element {
   const removeTask = useTasks((store) => store.removeTask);
+  const stickers = {
+    1: s1,
+    2: s2,
+    3: s3,
+    4: s4,
+    5: s5,
+    6: s6,
+    7: s7,
+    8: s8
+  }
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max) + 1;
+  }
 
   const handleDelete = () => {
     removeTask(task);
@@ -34,7 +56,6 @@ export function TaskItem(task): JSX.Element {
         </Typography>
       </CardContent>
       <CardActions>
-      
         <Button size="small" onClick={handleDelete} sx={{
             ":hover": {
               bgcolor: "#E97451", 
@@ -44,6 +65,7 @@ export function TaskItem(task): JSX.Element {
           }}>
           Delete Task
         </Button>
+        <img src={stickers[getRandomInt(8)]} alt="sticker" className="sticker" />
       </CardActions>
     </Card>
   );

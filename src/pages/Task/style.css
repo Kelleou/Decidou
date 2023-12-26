@@ -18,11 +18,23 @@
 }
 
 .list-task-date {
- color: #b87663;
+ color: #E97451;
   font-family: monospace;
 }
 
 .list-task-description {
     color: #2e4a66d3;
     font-family: Cambria;
+}
+
+.sticker {
+  position: relative;
+  left: 50px;
+  width: 50px;
+}
+
+.figure-sticker {
+  position: relative;
+  left: 60%;
+  width: 200px;
 }
