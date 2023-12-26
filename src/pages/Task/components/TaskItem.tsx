@@ -34,18 +34,7 @@ export function TaskItem(task): JSX.Element {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button
-          size="small"
-          sx={{
-            ":hover": {
-              bgcolor: "var(--blue)", 
-              color: "white",
-            },
-            color: "#6082B6"
-          }}
-        >
-          Edit Task
-        </Button>
+      
         <Button size="small" onClick={handleDelete} sx={{
             ":hover": {
               bgcolor: "#E97451", 

@@ -5,7 +5,6 @@ import { persist } from 'zustand/middleware';
 type TasksStore = {
     tasks: Task[];
     addTask: (newTask: Task) => void;
-    editTask: (oldTask: Task, newTask: Task) => void;
     removeTask: (task: Task) => void;
     setTasks: (tasks: Task[]) => void;
 }
@@ -19,14 +18,6 @@ export const useTasks = create<TasksStore>()(
         set(({ tasks }) => {
             return { tasks: [...tasks, newTask] };
           }),
-        editTask: (oldTask, newTask) => {
-            set((state) => {
-              const newTasks = [...state.tasks];
-              const index = newTasks.findIndex((task) => task.title === oldTask.title);
-              newTasks[index] = newTask;
-              return { tasks: newTasks };
-            });
-          },
           removeTask: (task) => {
             set((state) => {
                 const newTasks = [...state.tasks];

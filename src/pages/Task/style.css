@@ -6,10 +6,10 @@
 
 .add-form {
   position: relative;
-  top: 25%;
+  top: 0%;
   right: 60vw;
   width: 70vw;
-  height: 50vh;
+  height: 350px;
 }
 
 .list-task-title {
