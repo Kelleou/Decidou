@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react"; 
+import { useState } from "react";
 import "./index.css";
 
 export default function Header() {
@@ -41,37 +41,63 @@ export default function Header() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li>
-            <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/food" onClick={() => setIsNavOpen(false)}>
-              Food
-            </NavLink>
-          </li>
-          <li>
-          <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/answer" onClick={() => setIsNavOpen(false)}>
-              Answer
-            </NavLink>
-          </li>
-          <li>
-          <NavLink className="navlinks font-semibold border-b border-gray-400 my-8 uppercase" to="/coin" onClick={() => setIsNavOpen(false)}>
-              Coin
-            </NavLink>
-          </li>
+                <NavLink
+                  className="navlinks font-semibold border-b border-gray-400 my-8 uppercase"
+                  to="/task"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Tasks
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="navlinks font-semibold border-b border-gray-400 my-8 uppercase"
+                  to="/food"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Food
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="navlinks font-semibold border-b border-gray-400 my-8 uppercase"
+                  to="/answer"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Answer
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="navlinks font-semibold border-b border-gray-400 my-8 uppercase"
+                  to="/coin"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Coin
+                </NavLink>
+              </li>
             </ul>
           </div>
         </section>
 
         <ul className="hidden space-x-10 lg:flex">
           <li>
+            <NavLink className="navlinks font-semibold" to="/task">
+              Tasks
+            </NavLink>
+          </li>
+          <li>
             <NavLink className="navlinks font-semibold" to="/food">
               Food
             </NavLink>
           </li>
           <li>
-          <NavLink className="navlinks font-semibold" to="/answer">
+            <NavLink className="navlinks font-semibold" to="/answer">
               Answer
             </NavLink>
           </li>
           <li>
-          <NavLink className="navlinks font-semibold" to="/coin">
+            <NavLink className="navlinks font-semibold" to="/coin">
               Coin
             </NavLink>
           </li>

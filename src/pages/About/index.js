@@ -11,14 +11,22 @@ const About = () => {
           <h3> What I can do:</h3>
           <ul className="functions-li">
             <li>
-              <p className="function text-orange-300">Select Random Food:</p> Generates a random food choice from my
-              database
+              <p className="function text-red-300">Sort Tasks:</p>{" "}
+              Allows users to create tasks and generate a schedule which users can export as PDF.
             </li>
             <li>
-            <p className="function text-sky-500">Book of Answers:</p> Generates a random quote from my book! &#40;
-              Inspired by The Book of Answers &#41;
+              <p className="function text-orange-300">Select Random Food:</p>{" "}
+              Generates a random food choice from my database
             </li>
-            <li><p className="function text-yellow-500">Toss a coin: </p> Generate a random face of a coin</li>
+            <li>
+              <p className="function text-sky-500">Book of Answers:</p>{" "}
+              Generates a random quote from my book! &#40; Inspired by The Book
+              of Answers &#41;
+            </li>
+            <li>
+              <p className="function text-yellow-500">Toss a coin: </p> Generate
+              a random face of a coin
+            </li>
             <br></br>
             <li>More functions coming soon..</li>
           </ul>

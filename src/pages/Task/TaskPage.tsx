@@ -18,7 +18,7 @@ export function TaskPage(): JSX.Element {
         </span>
         <span className="col-1">
           <AddTask />
-          <button className='btns task-btns' onClick={() => navigate("/task/schedule")}> Schedule </button>
+          <button className='btns task-btns' onClick={() => navigate("/task/schedule")}> Create Schedule! </button>
           <button className='btns task-btns' onClick={() => setTasks([])}>Delete all tasks</button>
           <button className='btns task-btns' onClick={() => setTasks(randomTasks)}>Demo (random tasks)</button>
         </span>
