@@ -43,6 +43,15 @@ export default function Header() {
               <li>
                 <NavLink
                   className="navlinks font-semibold border-b border-gray-400 my-8 uppercase"
+                  to="/decide"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Random Decision
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="navlinks font-semibold border-b border-gray-400 my-8 uppercase"
                   to="/task"
                   onClick={() => setIsNavOpen(false)}
                 >
@@ -81,6 +90,11 @@ export default function Header() {
         </section>
 
         <ul className="hidden space-x-10 lg:flex">
+          <li>
+            <NavLink className="navlinks font-semibold" to="/decide">
+              Random Decision
+            </NavLink>
+          </li>
           <li>
             <NavLink className="navlinks font-semibold" to="/task">
               Tasks

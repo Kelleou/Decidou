@@ -91,3 +91,26 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
 }
+
+@media only screen and (max-width: 768px) {
+  .spinner-container {
+    width: 55vw;
+    height: 55vw;
+  }
+  .spinner-arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 50px solid var(--blue);
+  }
+  .segment-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-30%, -15%) rotate(245deg);
+    font-size: 10px;
+    font-family: "Bree Serif", sans-serif;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+  }
+}
