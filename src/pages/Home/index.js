@@ -9,6 +9,9 @@ export default function Home() {
       <div className="flex items-center justify-center">
         <div className="grid grid-cols-2 m-10 gap-5">
           <span>
+            <Link to="/decide" className="btns">
+              Random Decision
+            </Link>
             <Link to="/task" className="btns">
               Help me schedule tasks!
             </Link>

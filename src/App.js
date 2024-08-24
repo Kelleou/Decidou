@@ -15,6 +15,7 @@ import About from './pages/About';
 import './pages/Task/TaskPage.tsx';
 import { TaskPage } from './pages/Task/TaskPage.tsx';
 import { ScheduledTaskPage } from './pages/Task/components/ScheduleTask.tsx';
+import { SpinPage } from './pages/Spin/SpinPage.tsx';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path="/about" element={<About />}/>
       <Route path="/task" element={<TaskPage/>}/>
       <Route path="/task/schedule" element={<ScheduledTaskPage/>}/>
+      <Route path="/decide" element={<SpinPage/>}/>
       </Route>
     </Routes>
     </>

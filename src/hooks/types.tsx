@@ -4,3 +4,6 @@ export type Task = {
     dueDate: Date;
 }
 
+export type Choice = {
+    description: String;
+}

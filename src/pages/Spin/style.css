@@ -1,0 +1,93 @@
+.task-btns {
+  display: block;
+  width: 125px;
+  font-size: 16px;
+}
+
+.add-form {
+  position: relative;
+  top: 0%;
+  right: 60vw;
+  width: 70vw;
+  height: 350px;
+}
+
+.list-task-title {
+  color: #6c92cc;
+  font-family: var(--globalFont);
+}
+
+.list-task-date {
+  color: #e97451;
+  font-family: monospace;
+}
+
+.list-task-description {
+  color: #2e4a66d3;
+  font-family: Cambria;
+}
+
+.sticker {
+  position: relative;
+  left: 50px;
+  width: 50px;
+}
+
+.figure-sticker {
+  position: relative;
+  left: 60%;
+  width: 200px;
+}
+
+.spinner-container {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid var(--blue);
+  margin: auto;
+  transition: transform 3s ease-out; 
+}
+
+.spinner-segment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color);
+  text-align: center;
+  line-height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+  transform: rotate(calc(360deg / var(--segments) * var(--index)));
+}
+
+.segment-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-30%, -15%) rotate(245deg);
+  font-size: 25px;
+  font-family: "Bree Serif", sans-serif;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5em;
+}
+.spinner-arrow {
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 60px solid var(--blue);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
